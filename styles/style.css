@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+nav{
+
+}
+main{
+    margin: auto;
+    width: 800px;
+}
+#home > p+h2 {
+    padding-bottom: 1rem;  
+}
+button{
+
+}
+footer{
+    
+}
