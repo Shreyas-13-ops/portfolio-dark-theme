@@ -1,0 +1,10 @@
+1. Basics - 
+    1.1 Font based on sec headings - 32px(reg) - 70px(bold) - 32px(reg)
+    1.2 BG color - #26292E
+2. WEB DEVELOPER - #2F80EC
+3. Button - W= 190, H = 60 : 24px
+4. 150px gap b/w sections
+5. CARDS
+    5.1 CARDS HOVER COLOR - #2F80EC
+    5.2 W= 350, H = 400, Gutter = 30px gap
+    5.3 24px icons of GITHUB & WEBSITE
