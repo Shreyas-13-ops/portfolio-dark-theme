@@ -31,27 +31,18 @@
         <h2 class="author-name">Shreyas Pangal</h2>
         <p class="theme-color-txt">WEB DEVELOPER</p>
         <p class="">
-          I love solving problems, learning, coding and watching documentaries 🎬.
+          I love solving problems, learning, coding and watching documentaries
+          🎬.
         </p>
         <button type="button" class="btn btn-primary">HIRE ME</button>
       </section>
 
-      <section id="projects" class="">
+      <section id="projects" class="projects">
         <h2 class="">Projects</h2>
-        <div class="cards-projects">
-          <div class="card-project">
+        <div class="cards-projects cards">
+          <div class="card-project card">
             <div class="card-body">
-              <h4 class="card-title">Qtrip(Dynamic)</h4>
-              <small class="card-text">HTML, CSS</small>
-            </div>
-            <!-- <div class="card-project-icons">
-              <div class="website"></div>
-              <div class="github"></div>
-            </div> -->
-          </div>
-          <div class="card-project">
-            <div class="card-body">
-              <h4>Qtrip(Static)</h4>
+              <h4 class="card-title">Qtrip (Dynamic)</h4>
               <small>HTML, CSS</small>
             </div>
             <!-- <div class="card-project-icons">
@@ -59,9 +50,9 @@
               <div class="github"></div>
             </div> -->
           </div>
-          <div class="card-project">
+          <div class="card-project card">
             <div class="card-body">
-              <h4>Speak with yoda</h4>
+              <h4 class="card-title">Qtrip (Static)</h4>
               <small>HTML, CSS</small>
             </div>
             <!-- <div class="card-project-icons">
@@ -69,9 +60,9 @@
               <div class="github"></div>
             </div> -->
           </div>
-          <div class="card-project">
+          <div class="card-project card">
             <div class="card-body">
-              <h4>Cash Register</h4>
+              <h4 class="card-title">Speak with yoda</h4>
               <small>HTML, CSS</small>
             </div>
             <!-- <div class="card-project-icons">
@@ -79,9 +70,19 @@
               <div class="github"></div>
             </div> -->
           </div>
-          <div class="card-project">
+          <div class="card-project card">
             <div class="card-body">
-              <h4>Track your profits</h4>
+              <h4 class="card-title">Cash Register</h4>
+              <small>HTML, CSS</small>
+            </div>
+            <!-- <div class="card-project-icons">
+              <div class="website"></div>
+              <div class="github"></div>
+            </div> -->
+          </div>
+          <div class="card-project card">
+            <div class="card-body">
+              <h4 class="card-title">Track your profits</h4>
               <small>HTML, CSS</small>
             </div>
             <!-- <div class="card-project-icons">
@@ -90,53 +91,84 @@
             </div> -->
           </div>
         </div>
-        <button type="button" class="cards-projects-more btn btn-primary">
+        <!-- <button type="button" class="cards-projects-more btn btn-primary">
           SEE MORE
-        </button>
+        </button> -->
       </section>
 
-      <section id="skills" class="">
+      <section id="skills" class="skills">
         <h2 class="">Skills</h2>
-        <h3>Technologies and Tools I use for development</h3>
-        <div class="cards-skills">
-          <div class="card-skill">
-            <div class="skill-img"></div>
-            <h4>HTML5</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <!-- <h3>Technologies and Tools I use for development</h3> -->
+        <div class="cards-skills cards">
+          <div class="card-skill card">
+            <!-- <div class="skill-img"></div> -->
+            <div class="card-body">
+              <h4 class="card-title">HTML5</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
-          <div class="card-skill">
-            <div class="skill-img"></div>
-            <h4>CSS3</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="card-skill card">
+            <!-- <div class="skill-img"></div> -->
+            <div class="card-body">
+              <h4 class="card-title">CSS3</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
-          <div class="card-skill">
-            <div class="skill-img"></div>
-            <h4>Bootstrap5</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="card-skill card">
+            <!-- <div class="skill-img"></div> -->
+            <div class="card-body">
+              <h4 class="card-title">Bootstrap5</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
-          <div class="card-skill">
-            <div class="skill-img"></div>
-            <h4>JavaScript(ES6+)</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="card-skill card">
+            <!-- <div class="skill-img"></div> -->
+            <div class="card-body">
+              <h4 class="card-title">JavaScript(ES6+)</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="contact" class="">
+      <section id="contact" class="contact">
         <p>LET'S HAVE A CHAT!</p>
-        <h2>Contact ME</h2>
-        <form action="" method="post">
-          <button type="button" class="btn btn-primary">SEND</button>
-        </form>
+        <h2>CONTACT ME</h2>
 
-        <aside>
+        <div class="form-input">
+          <form action="" method="post">
+            <p>
+              <label for="fullname">Full name:</label>
+              <input type="text" id="fullname" name="fullname" />
+            </p>
+            <p>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+            </p>
+            <p>
+              <label for="message">Your message:</label>
+              <input type="text" id="message" name="message" />
+            </p>
+            <button type="submit" class="btn-submit">SEND</button>
+          </form>
+        </div>
+
+        <!-- <aside>
           <h5>Reach me on</h5>
           <div class="social-handles">
             <div id="linkedin"></div>
             <div id="twitter"></div>
             <div id="email"></div>
           </div>
-        </aside>
+        </aside> -->
       </section>
     </main>
 
