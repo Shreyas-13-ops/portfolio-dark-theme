@@ -6,7 +6,8 @@
   --comp-bg-color: #2f80ec;
 
   --txt-color: aliceblue;
-  --txt-color-light: #c8c1c1b6;
+  --txt-color-light: #c8c1c194;
+  --form-color-input: rgba(136, 124, 124, 0.109);
 }
 html {
   scroll-behavior: smooth;
@@ -138,4 +139,20 @@ ul li a:focus {
 }
 #skills .card-title{
     padding-bottom: 5px;
+}
+
+/* FROM INPUT */
+.form-input input, textarea{
+    display: block;
+    border-radius: .3rem;
+
+    background: var(--form-color-input);
+    border: none;
+
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    
+    font-size: 1.2vw;
+    font-family: inherit;
+    width: 30vw;
 }
