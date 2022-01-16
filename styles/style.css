@@ -4,6 +4,7 @@
 :root {
   --bg-color: #26292e;
   --comp-bg-color: #2f80ec;
+  --hover-bg-color: #1869c5;
 
   --txt-color: aliceblue;
   --txt-color-light: #c8c1c194;
@@ -73,6 +74,10 @@ button {
 
   border: none;
   border-radius: 0.5rem;
+  transition: all .5s;
+}
+button:hover{
+    background-color: var(--hover-bg-color);
 }
 /* NAV */
 nav ul {
@@ -151,8 +156,11 @@ ul li a:focus {
 
     padding: 1rem;
     margin-bottom: 1.5rem;
-    
+
     font-size: 1.2vw;
     font-family: inherit;
     width: 30vw;
+}
+.form-input textarea{
+    margin-bottom: 0rem;
 }
