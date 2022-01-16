@@ -1,8 +1,85 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap');
 
+:root{
+    --bg-color: #26292E;
+    --comp-bg-color: #2F80EC;
+
+    --txt-color: aliceblue;
+    --txt-color-light: #c8c1c1b6;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
+
+    /* FONT */
     font-family: 'Inter', Arial, sans-serif;
+    font-size: 1.3vw;
+    line-height: 2.5vw;
+
+    /* COLOR */
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+main{
+    margin: 0 auto;
+    width: 60%;
+}
+main section{
+    margin-top: 3.5vw;
+}
+.home p{
+    font-size: 1.8vw;
+    font-weight: 550;
+}
+.author-name{
+    font-size: 5vw;
+    padding: 3rem 0;
+}
+.theme-color-txt{
+    word-spacing: .5rem;
+    letter-spacing: 0.1rem;
+
+    padding-bottom: 1rem;
+    color: var(--comp-bg-color);
+}
+.theme-color-txt ~ p {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+button{
+    background-color: var(--comp-bg-color);
+    color: var(--txt-color);
+    font-size: 1rem;
+    letter-spacing: .1rem;
+
+    margin-top: .8rem;
+    width: 10rem;
+    height: 3.5rem;
+
+    border: none;
+    border-radius: .5rem;
+}
+nav ul{
+    list-style: none;
+    margin: 1rem 0 0 0;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+ul li{
+    padding-left: 5rem;
+}
+ul li a:link{
+    color: var(--txt-color-light);
+    text-decoration: none;
+}
+ul li a:hover, ul li a:focus{
+    color: var(--txt-color);
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--txt-color-light);
+    padding-bottom: .2vw;
 }
