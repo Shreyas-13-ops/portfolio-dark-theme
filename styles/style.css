@@ -187,28 +187,10 @@ button:hover {
   .navbar .menu{
     display: none;
   }
+  .navbar .menu.active{
+    display: block;
+  }
 }
-
-/* 
-.navbar-nav {
-  padding-top: 1rem;
-
-  display: flex;
-  justify-content: center;
-}
-.navbar-nav li {
-  padding-left: 5rem;
-}
-.navbar-nav li a {
-  color: var(--txt-color-light);
-}
-.navbar-nav li a:hover,
-.navbar-nav li a:focus {
-  color: var(--txt-color);
-
-  border-bottom: 1px solid var(--txt-color-light);
-  padding-bottom: 0.2vw;
-} */
 
 /* PROJECTS SECTION */
 .cards {
