@@ -16,12 +16,14 @@ html {
 * {
   box-sizing: border-box;
   margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Inter", Arial, sans-serif;
 }
 body {
   /* FONT */
-  font-family: "Inter", Arial, sans-serif;
   font-size: 1.3vw;
-  line-height: 2.5vw;
+  line-height: 1.6;
   margin-bottom: 2rem;
 
   /* COLOR */
@@ -30,26 +32,27 @@ body {
 }
 main {
   margin: 0 auto;
+  margin-top: 8rem;
   width: 60%;
 }
 main section {
-  margin-top: 3.5vw;
+  margin-top: 5rem;
 }
 #projects h2,
 #skills h2,
 #contact h2 {
-  padding-bottom: 2rem;
+  padding-bottom: .5rem;
   font-weight: normal;
 }
 
 /* HOME SECTION */
-.home p , #contact > p{
+.contact > p, .home p {
   font-size: 1.8vw;
   font-weight: 500;
 }
-.author-name, #contact > h2 {
+.author-name, .contact > h2 {
   font-size: 5vw;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 .theme-color-txt {
   word-spacing: 0.5rem;
@@ -69,35 +72,40 @@ button {
   letter-spacing: 0.1rem;
 
   margin-top: 0.8rem;
+  padding: 1.2vw;
   width: 10rem;
-  height: 3.5rem;
 
   border: none;
   border-radius: 0.5rem;
-  transition: all .5s;
+  transition: all 250ms;
 }
 button:hover{
     background-color: var(--hover-bg-color);
 }
 /* NAV */
-nav ul {
-  list-style: none;
-  margin-top: 1rem;
+.navbar{
+  width: 100%;
+  height: 10vh;
+  background-color: var(--form-color-input);
+
+  position: fixed;
+  top: 0;
+}
+.navbar-nav {
+  padding-top: 1rem;
 
   display: flex;
   justify-content: center;
 }
-ul li {
+.navbar-nav li {
   padding-left: 5rem;
 }
-ul li a {
+.navbar-nav li a {
   color: var(--txt-color-light);
-  text-decoration: none;
 }
-ul li a:hover,
-ul li a:focus {
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
   color: var(--txt-color);
-  text-decoration: none;
 
   border-bottom: 1px solid var(--txt-color-light);
   padding-bottom: 0.2vw;
@@ -106,8 +114,8 @@ ul li a:focus {
 /* PROJECTS SECTION */
 .cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1vw;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2vw;
 }
 .card {
   position: relative;
@@ -117,8 +125,7 @@ ul li a:focus {
   align-items: center;
   justify-content: center;
 
-  width: 20vw;
-  height: 40vh;
+  padding: 6rem 2rem;
 
   background-color: rgba(211, 211, 211, 0.226);
   transition: all 0.8s;
@@ -126,32 +133,35 @@ ul li a:focus {
 .card:hover {
   background-color: var(--comp-bg-color);
 }
-.card-body {
-  position: absolute;
-  /* left: 5vw; */
-  z-index: 1;
-}
-.card-text {
+/* .card-body {
+  display: flex;
+  flex-flow: column;
+  align-items: space-between;
+  justify-content: center;
+} */
+.card-body small{
+  display: inline-block;
+  padding-top: 1rem;
+} 
+ .card-text {
     font-size: 0.8vw;
     line-height: 20px;
 }
 .card-title{
-    font-size: 1.5vw;
-    word-wrap: normal; /* break-word*/
-}
-#skills .card-body {
-  left: 5vw;
-}
-#skills .card-title{
-    padding-bottom: 5px;
+    font-size: 2vw;
 }
 
 /* FROM INPUT */
+.contact > h2{
+  padding-top: 0;
+  line-height: 1.2;
+}
 .form-input input, textarea{
     display: block;
     border-radius: .3rem;
 
     background: var(--form-color-input);
+    color: white;
     border: none;
 
     padding: 1rem;
@@ -163,4 +173,5 @@ ul li a:focus {
 }
 .form-input textarea{
     margin-bottom: 0rem;
+    color: white;
 }
