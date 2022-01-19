@@ -22,7 +22,6 @@ html {
 }
 body {
   /* FONT */
-  font-size: 1.3vw;
   line-height: 1.6;
   margin-bottom: 2rem;
 
@@ -41,16 +40,18 @@ main section {
 #projects h2,
 #skills h2,
 #contact h2 {
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-weight: normal;
 }
 
 /* HOME SECTION */
-.contact > p, .home p {
+.contact > p,
+.home p {
   font-size: 1.8vw;
   font-weight: 500;
 }
-.author-name, .contact > h2 {
+.author-name,
+.contact > h2 {
   font-size: 5vw;
   padding: 1rem 0;
 }
@@ -79,18 +80,116 @@ button {
   border-radius: 0.5rem;
   transition: all 250ms;
 }
-button:hover{
-    background-color: var(--hover-bg-color);
+button:hover {
+  background-color: var(--hover-bg-color);
 }
-/* NAV */
-.navbar{
+
+/* NAV SECTION*/
+.navbar {
+  background-color: var(--form-color-input);
   width: 100%;
   height: 10vh;
-  background-color: var(--form-color-input);
 
   position: fixed;
   top: 0;
+  left: 0;
+
+  padding: 0 1.3rem;
 }
+.navbar_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+.hamburger {
+  display: none;
+}
+.navbar .logo a {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 2px;
+}
+.navbar .menu ul {
+  display: flex;
+}
+.navbar .menu ul li a {
+  display: block;
+  width: 7.5rem;
+  font-size: 1.28vw;
+  letter-spacing: 2px;
+  text-align: center;
+  margin-right: 1.5rem;
+
+  color: white;
+  text-transform: uppercase;
+  padding: 0.65rem;
+  border-radius: 0.2rem;
+  transition: background 0.2s ease;
+}
+.navbar .menu ul li:last-child a {
+  margin-right: 0;
+}
+/* .navbar .menu .active{
+  background-color: var(--hover-bg-color);
+} */
+.navbar .menu ul li a:hover {
+  background-color: var(--comp-bg-color);
+}
+
+/* NAV MEDIA QUERY */
+@media (max-width: 860px) {
+  .navbar {
+    height: 16vh;
+    padding: 0.8rem;
+  }
+  .navbar .navbar_inner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  .navbar {
+    height: 12vh;
+  }
+  main {
+    margin-top: 6rem;
+  }
+  .navbar .menu ul {
+    padding-left: 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    display: block;
+    background-color: var(--form-color-input);
+    width: 100%;
+  }
+  .navbar .menu ul li{
+    padding: .65rem;
+  }
+  .navbar .menu ul li a{
+    font-size: .8rem;
+    width: 100%;
+    padding: .8rem;
+  }
+  .navbar .hamburger{
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .navbar .menu{
+    display: none;
+  }
+}
+
+/* 
 .navbar-nav {
   padding-top: 1rem;
 
@@ -109,7 +208,7 @@ button:hover{
 
   border-bottom: 1px solid var(--txt-color-light);
   padding-bottom: 0.2vw;
-}
+} */
 
 /* PROJECTS SECTION */
 .cards {
@@ -139,39 +238,40 @@ button:hover{
   align-items: space-between;
   justify-content: center;
 } */
-.card-body small{
+.card-body small {
   display: inline-block;
   padding-top: 1rem;
-} 
- .card-text {
-    font-size: 0.8vw;
-    line-height: 20px;
 }
-.card-title{
-    font-size: 2vw;
+.card-text {
+  font-size: 0.8vw;
+  line-height: 20px;
+}
+.card-title {
+  font-size: 2vw;
 }
 
 /* FROM INPUT */
-.contact > h2{
+.contact > h2 {
   padding-top: 0;
   line-height: 1.2;
 }
-.form-input input, textarea{
-    display: block;
-    border-radius: .3rem;
+.form-input input,
+textarea {
+  display: block;
+  border-radius: 0.3rem;
 
-    background: var(--form-color-input);
-    color: white;
-    border: none;
+  background: var(--form-color-input);
+  color: white;
+  border: none;
 
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
 
-    font-size: 1.2vw;
-    font-family: inherit;
-    width: 30vw;
+  font-size: 1.2vw;
+  font-family: inherit;
+  width: 30vw;
 }
-.form-input textarea{
-    margin-bottom: 0rem;
-    color: white;
+.form-input textarea {
+  margin-bottom: 0rem;
+  color: white;
 }
