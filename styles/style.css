@@ -119,7 +119,7 @@ button:hover {
 .navbar .menu ul li a {
   display: block;
   width: 7.5rem;
-  font-size: 1.28vw;
+  font-size: .9vw;
   letter-spacing: 2px;
   text-align: center;
   margin-right: 1.5rem;
@@ -150,6 +150,9 @@ button:hover {
     display: flex;
     flex-direction: column;
   }
+  .navbar .menu ul li a {
+    font-size: 1vw;
+  }
 }
 @media (max-width: 720px) {
   .navbar {
@@ -164,7 +167,7 @@ button:hover {
     top: 60px;
     left: 0;
     display: block;
-    background-color: var(--form-color-input);
+    background-color: var(--bg-color);
     width: 100%;
   }
   .navbar .menu ul li{
@@ -189,6 +192,18 @@ button:hover {
   }
   .navbar .menu.active{
     display: block;
+  }
+}
+@media (max-width: 396px) {
+  main{
+    margin: 0 auto;
+    width: 90%;
+  }
+  .navbar_inner{
+    align-items: start;
+  }
+  .logo{
+    font-size: .125rem;
   }
 }
 
