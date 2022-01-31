@@ -45,14 +45,14 @@ main section {
 }
 
 /* HOME SECTION */
-.contact > p,
+.contact p,
 .home p {
-  font-size: 1.8vw;
+  font-size: 120%;
   font-weight: 500;
 }
 .author-name,
 .contact > h2 {
-  font-size: 5vw;
+  font-size: 250%;
   padding: 1rem 0;
 }
 .theme-color-txt {
@@ -62,19 +62,20 @@ main section {
   padding-bottom: 1rem;
   color: var(--comp-bg-color);
 }
-.theme-color-txt ~ p {
-  font-size: 1.3vw;
+.author-bio {
+  font-size: 60%;
   font-weight: 500;
 }
+
+/* Button */
 button {
   background-color: var(--comp-bg-color);
   color: var(--txt-color);
-  font-size: 1rem;
+  font-size: 80%;
   letter-spacing: 0.1rem;
 
   margin-top: 0.8rem;
-  padding: 1.2vw;
-  width: 10rem;
+  padding: 1rem 5rem;
 
   border: none;
   border-radius: 0.5rem;
@@ -149,6 +150,9 @@ button:hover {
   .navbar .navbar_inner {
     display: flex;
     flex-direction: column;
+  }
+  .navbar .menu ul li {
+   background-color: var(--form-color-input);
   }
   .navbar .menu ul li a {
     font-size: 1vw;
@@ -244,13 +248,17 @@ button:hover {
   line-height: 20px;
 }
 .card-title {
-  font-size: 2vw;
+  font-size: 130%;
 }
 
 /* FROM INPUT */
 .contact > h2 {
   padding-top: 0;
+  margin-bottom: 1.5rem;
   line-height: 1.2;
+}
+form{
+  width: 100%;
 }
 .form-input input,
 textarea {
@@ -264,9 +272,10 @@ textarea {
   padding: 1rem;
   margin-bottom: 1.5rem;
 
-  font-size: 1.2vw;
+  font-size: 100%;
   font-family: inherit;
-  width: 30vw;
+  width: 100%;
+
 }
 .form-input textarea {
   margin-bottom: 0rem;
