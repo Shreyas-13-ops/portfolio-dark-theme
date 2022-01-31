@@ -68,14 +68,14 @@ main section {
 }
 
 /* Button */
-button {
+button{
   background-color: var(--comp-bg-color);
   color: var(--txt-color);
   font-size: 80%;
   letter-spacing: 0.1rem;
 
-  margin-top: 0.8rem;
-  padding: 1rem 5rem;
+  margin-top: 1rem;
+  padding: 1.4rem 4rem;
 
   border: none;
   border-radius: 0.5rem;
@@ -163,7 +163,9 @@ button:hover {
     height: 12vh;
   }
   main {
+    margin: 0 auto;
     margin-top: 6rem;
+    width: 90%;
   }
   .navbar .menu ul {
     padding-left: 0;
